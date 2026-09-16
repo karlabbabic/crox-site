@@ -151,8 +151,9 @@ a {
   background:
     linear-gradient(
       180deg,
-      rgba(5, 10, 10, 0.35),
-      rgba(5, 10, 10, 0.68)
+      rgba(10, 15, 15, 0.25) 0%,
+      rgba(10, 15, 15, 0.48) 45%,
+      rgba(10, 15, 15, 0.72) 100%
     );
 
   z-index: -2;
@@ -165,34 +166,37 @@ a {
 
 .hero-logo {
   display: block;
-
-  width: min(570px, 80vw);
-  max-height: 250px;
-
+  width: min(430px, 70vw);
+  max-height: 190px;
   object-fit: contain;
 
-  margin: 0 auto 25px;
+  margin: 0 auto 32px;
+  padding: 18px 22px;
+
+  background: white;
+  border-radius: 12px;
+
+  box-shadow: 0 8px 30px rgba(0,0,0,0.12);
 }
 
 .eyebrow {
-  margin: 0 0 22px;
+  margin: 0 0 26px;
+
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
 
   text-transform: uppercase;
-  letter-spacing: 0.19em;
-
-  font-size: 0.82rem;
-  font-weight: 600;
-
-  opacity: 0.85;
+  opacity: 0.88;
 }
 
 .hero h1 {
-  margin: 0;
+  max-width: 1100px;
+  margin: 0 auto;
 
-  font-size: clamp(2.8rem, 7vw, 6.5rem);
+  font-size: clamp(2.8rem, 6vw, 5.7rem);
   line-height: 0.98;
-  letter-spacing: -0.055em;
-
+  letter-spacing: -0.05em;
   font-weight: 600;
 }
 
