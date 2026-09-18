@@ -713,3 +713,128 @@ a {
     margin-top: 15px;
   }
 }
+
+/* =========================================
+   TALKS & ABSTRACTS
+   ========================================= */
+
+.abstracts-section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.abstracts-section .section-heading {
+  max-width: 720px;
+  margin-bottom: 2.5rem;
+}
+
+.abstracts-section .section-intro {
+  margin-top: 0.75rem;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  opacity: 0.7;
+}
+
+.abstract-list {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.abstract-card {
+  background: #ffffff;
+  border: 1px solid rgba(20, 30, 45, 0.1);
+  border-radius: 20px;
+  padding: 1.75rem 2rem;
+  box-shadow: 0 8px 30px rgba(20, 30, 45, 0.04);
+}
+
+.abstract-speaker {
+  margin-bottom: 1rem;
+}
+
+.abstract-speaker h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.abstract-speaker p {
+  margin: 0.2rem 0 0;
+  font-size: 0.95rem;
+  opacity: 0.6;
+}
+
+.abstract-card h4 {
+  margin: 0 0 1.3rem;
+  max-width: 900px;
+  font-size: clamp(1.2rem, 2vw, 1.45rem);
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+.abstract-card details {
+  border-top: 1px solid rgba(20, 30, 45, 0.1);
+  padding-top: 1rem;
+}
+
+.abstract-card summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.95rem;
+  list-style: none;
+}
+
+.abstract-card summary::-webkit-details-marker {
+  display: none;
+}
+
+.abstract-card summary::after {
+  content: "+";
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.abstract-card details[open] summary::after {
+  content: "−";
+}
+
+.abstract-text {
+  max-width: 900px;
+  padding-top: 1rem;
+}
+
+.abstract-text p {
+  margin: 0 0 1rem;
+  line-height: 1.75;
+  opacity: 0.82;
+}
+
+.abstract-text p:last-child {
+  margin-bottom: 0;
+}
+
+.title-pending {
+  opacity: 0.55;
+  font-style: italic;
+}
+
+.abstract-pending {
+  margin: -0.4rem 0 0;
+  font-size: 0.95rem;
+  opacity: 0.5;
+}
+
+@media (max-width: 700px) {
+  .abstracts-section {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .abstract-card {
+    padding: 1.4rem;
+    border-radius: 16px;
+  }
+}
