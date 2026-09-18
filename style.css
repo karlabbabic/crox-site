@@ -75,6 +75,10 @@ a {
   color: white;
 }
 
+.home-nav {
+  color: var(--text);
+}
+
 .nav-brand {
   font-size: 1rem;
   font-weight: 700;
