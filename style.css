@@ -719,20 +719,34 @@ a {
    ========================================= */
 
 .abstracts-section {
-  padding-top: 5rem;
+  padding-top: 3rem;
   padding-bottom: 5rem;
 }
 
 .abstracts-section .section-heading {
-  max-width: 720px;
-  margin-bottom: 2.5rem;
+  max-width: 800px;
+  margin: 0 0 2rem 0;
+  text-align: left;
+}
+
+.abstracts-section .section-label {
+  margin-bottom: 0.8rem;
+}
+
+.abstracts-section .section-heading h2 {
+  margin: 0;
+  max-width: none;
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  line-height: 1;
+  letter-spacing: -0.04em;
 }
 
 .abstracts-section .section-intro {
-  margin-top: 0.75rem;
-  font-size: 1.05rem;
-  line-height: 1.7;
-  opacity: 0.7;
+  margin: 1.2rem 0 0;
+  max-width: 650px;
+  font-size: 1rem;
+  line-height: 1.6;
+  opacity: 0.6;
 }
 
 .abstract-list {
@@ -843,6 +857,10 @@ a {
 
 .programme-day {
   margin-bottom: 5rem;
+}
+
+.programme-day:last-child {
+  margin-bottom: 1rem;
 }
 
 .schedule {
