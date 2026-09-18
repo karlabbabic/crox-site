@@ -105,6 +105,7 @@ a {
 
 .hero {
   position: relative;
+  isolation: isolate;
 
   min-height: 100vh;
 
@@ -116,9 +117,13 @@ a {
 
   overflow: hidden;
 
-  color: white;
+  background: #ffffff;
+  color: var(--text);
   text-align: center;
 }
+
+
+/* Background video */
 
 .hero-video {
   position: absolute;
@@ -144,6 +149,9 @@ a {
   pointer-events: none;
 }
 
+
+/* Light wash over background */
+
 .hero-overlay {
   position: absolute;
   inset: 0;
@@ -151,44 +159,60 @@ a {
   background:
     linear-gradient(
       180deg,
-      rgba(10, 15, 15, 0.25) 0%,
-      rgba(10, 15, 15, 0.48) 45%,
-      rgba(10, 15, 15, 0.72) 100%
+      rgba(255, 255, 255, 0.78) 0%,
+      rgba(255, 255, 255, 0.84) 55%,
+      rgba(255, 255, 255, 0.94) 100%
     );
 
   z-index: -2;
 }
+
+
+/* Hero content */
 
 .hero-content {
   width: 100%;
   max-width: 1000px;
 }
 
+
+/* CROX logo */
+
 .hero-logo {
   display: block;
-  width: min(430px, 70vw);
-  max-height: 190px;
+
+  width: min(390px, 68vw);
+  max-height: 175px;
   object-fit: contain;
 
   margin: 0 auto 32px;
-  padding: 18px 22px;
+  padding: 16px 20px;
 
-  background: white;
+  background: #ffffff;
+
+  border: 1px solid rgba(23, 23, 23, 0.10);
   border-radius: 12px;
 
-  box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+  box-shadow: 0 10px 35px rgba(23, 23, 23, 0.07);
 }
+
+
+/* Small heading */
 
 .eyebrow {
   margin: 0 0 26px;
 
   font-size: 0.78rem;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.22em;
 
   text-transform: uppercase;
-  opacity: 0.88;
+
+  color: var(--muted);
 }
+
+
+/* Main title */
 
 .hero h1 {
   max-width: 1100px;
@@ -197,14 +221,25 @@ a {
   font-size: clamp(2.8rem, 6vw, 5.7rem);
   line-height: 0.98;
   letter-spacing: -0.05em;
+
   font-weight: 600;
+
+  color: var(--text);
 }
+
+
+/* Date */
 
 .hero-date {
   margin: 34px 0 0;
 
   font-size: clamp(1.1rem, 2vw, 1.35rem);
+
+  color: var(--text);
 }
+
+
+/* Buttons */
 
 .hero-buttons {
   margin-top: 42px;
@@ -237,31 +272,50 @@ a {
   transform: translateY(-2px);
 }
 
+
+/* Primary button */
+
 .button-light {
-  background: white;
-  color: #111;
-  border: 1px solid white;
+  background: var(--dark);
+  color: #ffffff;
+
+  border: 1px solid var(--dark);
 }
 
+.button-light:hover {
+  background: #28302f;
+}
+
+
+/* Secondary button */
+
 .button-outline {
-  border: 1px solid rgba(255, 255, 255, 0.65);
-  color: white;
+  background: rgba(255, 255, 255, 0.55);
+
+  border: 1px solid rgba(23, 23, 23, 0.28);
+
+  color: var(--text);
 }
 
 .button-outline:hover {
-  background: white;
-  color: #111;
+  background: var(--dark);
+  border-color: var(--dark);
+
+  color: #ffffff;
 }
+
+
+/* Down arrow */
 
 .scroll-cue {
   position: absolute;
   bottom: 28px;
 
-  color: white;
+  color: var(--text);
   text-decoration: none;
 
   font-size: 1.4rem;
-  opacity: 0.75;
+  opacity: 0.55;
 }
 
 
