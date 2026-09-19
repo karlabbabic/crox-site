@@ -186,7 +186,8 @@ a {
   display: block;
 
   width: min(390px, 68vw);
-  max-height: 175px;
+  height: auto;
+
   object-fit: contain;
 
   margin: 0 auto 32px;
