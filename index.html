@@ -36,7 +36,7 @@
 
     <div class="hero-video" aria-hidden="true">
       <iframe
-        src="https://player.vimeo.com/video/213096096?background=1&autoplay=1&loop=1&muted=1"
+        id="hero-video-frame"
         frameborder="0"
         allow="autoplay; fullscreen"
         tabindex="-1"
@@ -327,5 +327,16 @@
 
   </footer>
 
+<script>
+  window.addEventListener("DOMContentLoaded", () => {
+    const frame = document.getElementById("hero-video-frame");
+
+    requestAnimationFrame(() => {
+      frame.src =
+        "https://player.vimeo.com/video/213096096?background=1&autoplay=1&loop=1&muted=1";
+    });
+  });
+</script>
+  
 </body>
 </html>
