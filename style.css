@@ -1004,7 +1004,7 @@ a {
 }
 
 .funding-text {
-  max-width: 850px;
+  max-width: 780px;
   margin: 0;
 
   color: var(--text);
