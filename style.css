@@ -988,27 +988,30 @@ a {
 /* FUNDING */
 
 .funding-section h2 {
-  margin-bottom: 45px;
+  margin-bottom: 40px;
 }
 
 .funding-content {
-  max-width: 850px;
+  max-width: 900px;
 }
 
-.funding-logo {
+.funding-section .funding-logo {
   display: block;
-  width: min(520px, 100%);
+  width: 650px;
+  max-width: 100%;
   height: auto;
-
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
 .funding-text {
-  max-width: 800px;
+  max-width: 850px;
   margin: 0;
 
-  color: var(--muted);
-
+  color: var(--text);
   font-size: 1rem;
   line-height: 1.7;
+}
+
+.nowrap {
+  white-space: nowrap;
 }
